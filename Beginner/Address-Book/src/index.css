@@ -1,0 +1,276 @@
+body{
+  background-color: hsl(0, 0%, 20%);
+  color:hsl(0, 0%, 100%);
+  font-family: serif;
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header{
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1{
+  flex:1;
+  padding-left: 5px;
+}
+.header button{
+ padding: 13px 10px 10px 10px;
+ background-color: hsl(120, 100%, 30%);
+ color:hsl(0, 0%, 100%);
+ border:none;
+ border-radius: 20px;
+ cursor: pointer;
+ position: relative;
+ right:50px;
+}
+.header button span{
+ position: relative;
+ bottom:2px;
+}
+
+/* main-container */
+
+.main-container{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+}
+
+  /* Left Container */
+
+ .left-container{
+   margin-top:50px;
+   margin-left: 50px;
+   display: flex;
+   flex-direction: column;
+   gap:20px;
+   border:1px solid hsl(0, 0%, 100%);
+   border-radius: 10px;
+   width:60%;
+ }
+ .left-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 30px;
+ }
+ .left-header h1{
+  font-size: 25px;
+ }
+ .left-header .left-search{
+  margin-top: 15px;
+ }
+ .left-header .left-search input{
+  height: 30px;
+  width:200px;
+  padding-left: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+ }
+ .left-header .left-search .left-search-icon{
+  position: relative;
+  left:30px;
+  top:5px;
+  color:hsl(0, 0%, 20%);
+  font-size: 20px;
+  cursor: pointer;
+ }
+ .account-details{
+  margin:20px 60px;
+ }
+
+ .cards{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border:1px solid #ffffff;
+  padding: 0px 20px;
+  z-index: 1;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+ }
+ .cards img{
+  height:50px;
+  width:50px;
+  border-radius: 50%;
+  border: none;
+ }
+ .info{
+  display: flex;
+  flex-direction: row;
+  color:hsl(0, 0%, 30%);
+ }
+ .account-name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left:20px;
+  gap:5px;
+ }
+ .account-name b{
+  font-size: 16px;
+ }
+ .account-name span{
+  font-size: 14px;
+  color:hsla(0, 0%, 0%, 0.782);
+ }
+ .account-contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left:30px;
+  gap:50px;
+ }
+ .account-contact strong{
+  font-size: 16px;
+ }
+ .account-contact span{
+  font-size: 14px;
+  color:hsla(0, 0%, 0%, 0.782);
+ }
+ .account-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+  padding-left: 20px;
+  gap:20px;
+  }
+  .account-button .edit-btn{
+    font-size: 25px;
+    padding:10px;
+    background-color: transparent;
+    color:hsl(0, 0%, 0%);
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+ .account-button .fav{
+  font-size: 25px;
+  padding:10px;
+  background-color: transparent;
+  color:hsl(0, 0%, 0%);
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+ .account-button .delete{
+  font-size: 25px;
+  padding: 10px;
+  background-color: transparent;
+  color:hsl(0, 0%, 0%);
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+  
+
+ /* Right-container */
+
+
+ .right-container{
+  margin-top:50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  border:1px solid hsl(0, 0%, 100%);
+  width:35%;
+  border-radius: 10px;
+}
+.right-header{
+ display: flex;
+ justify-content: space-between;
+ padding: 5px 30px;
+}
+.right-header h1{
+ font-size: 25px;
+}
+.right-header .right-search{
+ margin-top: 15px;
+}
+.right-header .right-search input{
+ height: 30px;
+ width:200px;
+ padding-left: 40px;
+ border-radius: 5px;
+ outline: none;
+ border: none;
+}
+.right-header .right-search .right-search-icon{
+ position: relative;
+ left:30px;
+ top:5px;
+ color:hsl(0, 0%, 20%);
+ font-size: 20px;
+ cursor: pointer;
+}
+.fav-cards{
+  margin:20px 20px;
+ }
+
+ .fcards{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border:1px solid #ffffff;
+  padding: 5px 5px;
+  z-index: 1;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+ }
+ .fcards img{
+  height:50px;
+  width:50px;
+  border-radius: 50%;
+  border: none;
+ }
+ .finfo{
+  display: flex;
+  flex-direction: row;
+  padding-left: 5px;
+  color: hsl(0, 0%, 30%);
+
+ }
+ .faccount-name{
+  display: flex;
+  flex-direction: column;
+  padding-left:10px;
+  gap:5px;
+
+ }
+ .faccount-name b{
+  font-size: 16px;
+ }
+ .faccount-name span{
+  font-size: 14px;
+  color:hsla(0, 0%, 0%, 0.782);
+  padding-left: 5px;
+ }
+ .faccount-contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:15px;
+  padding-left: 20px;
+ }
+ .faccount-contact strong{
+  font-size: 16px;
+ }
+ .faccount-contact span{
+  font-size: 14px;
+  color:hsla(0, 0%, 0%, 0.782);
+ }
