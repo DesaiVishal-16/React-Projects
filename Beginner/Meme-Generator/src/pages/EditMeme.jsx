@@ -24,9 +24,9 @@ const EditMeme = () => {
       <div className="flex flex-col gap-2 md:flex-row md:gap-20  mt-10 ml-5">
         <div className="flex flex-col items-center gap-5">
           <div className="flex flex-col gap-5">
-            <div ref={memeRef} className="flex">
+            <div ref={memeRef} className="flex flex-col sm:flex-col md:flex-row lg:flex-row">
               <img className="w-full max-w-lg z-0" src={url} alt="Meme" />
-              <ul className="render-text z-2">
+              <ul className="render-text z-2 ">
                 {Array(count)
                   .fill(0)
                   .map((_, index) => (

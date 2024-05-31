@@ -6,7 +6,7 @@ const Home = () => {
     
   return (
     <>
-    <main className="border-y-2 border-gray-500 mt-2">
+    <main className="border-y-2 border-y-gray-500 mt-2">
        <MemeTemplate />
     </main>
     </>
