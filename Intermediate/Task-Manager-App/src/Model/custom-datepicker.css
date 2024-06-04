@@ -1,0 +1,17 @@
+/* custom-datepicker.css */
+.react-datepicker__header {
+  background-color: #333; /* White background for the header */
+  color: #fff; /* Black text color for the header */
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  color: #fff; /* Black text color for dates and time */
+}
+
+.react-datepicker {
+  background-color: #333; /* White background for the calendar */
+  color: #fff; /* Black text color for the calendar */
+}
