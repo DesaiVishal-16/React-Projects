@@ -25,14 +25,14 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="absolute md:relative">
+    <div className="relative md:relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="block lg:hidden text-gray-500 focus:outline-none p-4"
+        className="block lg:hidden text-gray-500 focus:outline-none p-4 fixed left-0 top-0 z-50"
         aria-label="Toggle Sidebar"
       >
         {isOpen ? (
-          <RiMenuFold3Fill className="text-white text-2xl" />
+          <RiMenuFold3Fill className="fixed left-56 top-5 text-white text-2xl inset-0 bg-gray-800  lg:hidden" />
         ) : (
           <RiMenuUnfold3Line className="text-white text-2xl" />
         )}
@@ -110,14 +110,6 @@ const Sidebar = () => {
           </ul>
         </nav>
       </div>
-
-      {isOpen && (
-        <RiMenuFold3Fill
-          onClick={() => setIsOpen(false)}
-          className="fixed left-56 top-5 text-white text-2xl inset-0 bg-gray-800 opacity-50 lg:hidden"
-          aria-label="Close Sidebar"
-        />
-      )}
     </div>
   );
 };
