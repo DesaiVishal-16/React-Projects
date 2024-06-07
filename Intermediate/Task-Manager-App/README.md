@@ -1,5 +1,5 @@
 ## Task Manager App
 
-[Visit Site](https://task-manager-app-r16.vercel.app)
+[Visit Site](https://task-ease-r16.netlify.app)
 
-![Task Manager App](./public/)
+![Task Manager App](./public/ui.png)
