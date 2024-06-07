@@ -1,13 +1,13 @@
 import MainComponent from "../components/MainComponent";
 import Sidebar from "../components/Sidebar";
 
-const HomePage = () => {
+const PageLayout = () => {
   return (
-    <div className="flex gap-5 text-white lg:m-10">
+    <div className="flex gap-5 bg-inherit  md:m-10">
       <Sidebar />
       <MainComponent />
     </div>
   );
 };
 
-export default HomePage;
+export default PageLayout;

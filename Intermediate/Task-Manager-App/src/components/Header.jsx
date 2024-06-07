@@ -6,7 +6,7 @@ import { IoIosAddCircleOutline } from "react-icons/io";
 import { lightTheme } from "../Theme/lightTheme";
 import PropTypes from "prop-types";
 
-const Header = ({ onOpen }) => {
+const Header = ({ onOpen, pageTitle }) => {
   const { theme, toggleTheme } = useTheme();
 
   return (
@@ -15,9 +15,11 @@ const Header = ({ onOpen }) => {
       style={{ backgroundColor: theme.backgroundColor, color: theme.color }}
     >
       <div className="flex flex-col gap-2 order-1 bg-inherit">
-        <h1 className="bg-inherit text-xl md:text-3xl font-bold">All Task</h1>
+        <h1 className="bg-inherit text-xl md:text-3xl font-bold">
+          {pageTitle}
+        </h1>
         <span
-          className={`w-14 border-2 ${
+          className={`border-below w-12 border-2 ${
             theme === lightTheme ? "border-gray-800" : "border-gray-200"
           }`}
         ></span>
@@ -27,12 +29,12 @@ const Header = ({ onOpen }) => {
         <div className="bg-transparent cursor-pointer">
           {theme === darkTheme ? (
             <MdDarkMode
-              className="text-2xl fill-white bg-inherit"
+              className="text-3xl fill-white bg-inherit hover:fill-gray-500"
               onClick={toggleTheme}
             />
           ) : (
             <MdLightMode
-              className="text-black text-2xl bg-inherit"
+              className="text-black text-3xl bg-inherit hover:fill-gray-600"
               onClick={toggleTheme}
             />
           )}
@@ -42,7 +44,9 @@ const Header = ({ onOpen }) => {
           <button className="addTask-btn" onClick={onOpen}>
             <IoIosAddCircleOutline
               className={`bg-inherit text-4xl ${
-                theme === lightTheme ? "fill-gray-600" : "fill-gray-300"
+                theme === lightTheme
+                  ? "fill-gray-600 hover:fill-gray-800"
+                  : "fill-gray-300 hover:fill-gray-100"
               }`}
             />
           </button>
@@ -53,5 +57,6 @@ const Header = ({ onOpen }) => {
 };
 Header.propTypes = {
   onOpen: PropTypes.func.isRequired,
+  pageTitle: PropTypes.string.isRequired,
 };
 export default Header;
