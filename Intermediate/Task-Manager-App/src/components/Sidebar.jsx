@@ -28,13 +28,13 @@ const Sidebar = () => {
     <div className="relative md:relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="block lg:hidden text-gray-500 focus:outline-none p-4 fixed left-0 top-0 z-50"
+        className="block lg:hidden text-gray-500 focus:outline-none p-2 fixed left-0 top-0 z-50"
         aria-label="Toggle Sidebar"
       >
         {isOpen ? (
-          <RiMenuFold3Fill className="fixed left-56 top-5 text-white text-2xl inset-0 bg-gray-800  lg:hidden" />
+          <RiMenuFold3Fill className="fixed left-56 top-5 text-white text-xl inset-0 bg-gray-800  lg:hidden" />
         ) : (
-          <RiMenuUnfold3Line className="text-white text-2xl" />
+          <RiMenuUnfold3Line className="text-white text-xl bg-inherit" />
         )}
       </button>
 
