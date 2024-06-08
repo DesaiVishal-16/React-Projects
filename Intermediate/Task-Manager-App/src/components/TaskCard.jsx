@@ -17,7 +17,7 @@ const TaskCard = ({
 
   return (
     <div
-      className={`flex flex-col justify-between rounded-xl w-60 h-48 max-w-sm shadow-xl cursor-pointer py-2 px-3 ${
+      className={`flex flex-col justify-between rounded-xl w-full md:w-60 h-48 max-w-sm shadow-xl cursor-pointer py-2 px-3 ${
         theme === darkTheme
           ? "bg-neutral-700 border-2 border-gray-600"
           : "bg-gray-400 border-none text-neutral-100"
@@ -46,7 +46,7 @@ const TaskCard = ({
         >
           {isCompleted ? "Completed" : "Incomplete"}
         </button>
-        <button onClick={handleEdit} className="edit bg-inherit pl-12">
+        <button onClick={handleEdit} className="edit bg-inherit pl-36 md:pl-12">
           <MdEditDocument className="text-2xl hover:fill-gray-200 bg-inherit" />
         </button>
         <button onClick={handleDelete} className="delete bg-inherit">
