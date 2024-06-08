@@ -80,7 +80,7 @@ const MainComponent = () => {
         )}
       </div>
 
-      <div className="all-components bg-inherit  md:pt-5 md:pl-1 w-full h-[480px] overflow-y-auto hide-scrollbar">
+      <div className="all-components bg-inherit  md:pt-5 md:pl-1 w-full h-full md:h-[480px] overflow-y-auto hide-scrollbar">
         <Outlet
           context={{
             tasks,
