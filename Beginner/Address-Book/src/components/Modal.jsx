@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import  './Modal.css'
 import { FiTrash } from "react-icons/fi";
-import PropTypes from'prop-types'
+import PropTypes from 'prop-types'
 
 
 

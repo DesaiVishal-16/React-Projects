@@ -141,7 +141,7 @@ const Modal = ({ onClose, handleSubmit, taskToEdit }) => {
               />
             </h1>
           </div>
-          <div className="create-task-btn bg-inherit justify-self self-center md:pl-32">
+          <div className="create-task-btn bg-inherit justify-self self-center">
             <button
               type="submit"
               className="text-xl text-white flex justify-center gap-2 items-center bg-blue-500 rounded-lg py-1 px-2 hover:bg-blue-600"
