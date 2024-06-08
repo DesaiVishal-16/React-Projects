@@ -7,7 +7,7 @@ const AllTasks = () => {
     useOutletContext();
 
   return (
-    <div className="tasks-lists grid grid-cols-1 sm:justify-center md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10 bg-inherit">
+    <div className="tasks-lists grid grid-cols-1 justify-center md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10 bg-inherit">
       {tasks &&
         tasks.map((task, index) => (
           <TaskCard

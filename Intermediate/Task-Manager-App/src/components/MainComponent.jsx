@@ -64,7 +64,7 @@ const MainComponent = () => {
   return (
     <div
       style={{ backgroundColor: theme.backgroundColor, color: theme.color }}
-      className="bg-zinc-800 border-2 border-gray-600 rounded-lg w-80 md:w-5/6 overflow-hidden p-5 md:p-10 my-20 mx-2 md:w-full lg:my-0"
+      className="bg-zinc-800 border-2 border-gray-600 rounded-lg w-full h-screen md:w-5/6 overflow-hidden p-5 md:p-10  md:h-auto my-20 mx-2 lg:my-0"
     >
       <div className="common-header">
         <Header onOpen={handleOpenModal} pageTitle={pageTitle} />
@@ -80,7 +80,7 @@ const MainComponent = () => {
         )}
       </div>
 
-      <div className="all-components bg-inherit p-2 w-full h-[480px] overflow-y-auto hide-scrollbar">
+      <div className="all-components bg-inherit  md:pt-5 md:pl-1 w-full h-[480px] overflow-y-auto hide-scrollbar">
         <Outlet
           context={{
             tasks,
