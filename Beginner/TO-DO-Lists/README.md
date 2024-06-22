@@ -1,6 +1,6 @@
 # To-Do-Lists
 
-[Live Link](https://todolists-r16.netlify.app)
+[Live Link](https://todolists-r16.vercel.app)
 
 A simple and efficient address book application built with React and Vite.
 
@@ -22,7 +22,7 @@ A simple and efficient address book application built with React and Vite.
 
 ## Demo
 
-Check out the live demo of the Address Book [here](https://todolists-r16.netlify.app).
+Check out the live demo of the Address Book [here](https://todolists-r16.vercel.app).
 
 ## Installation
 
