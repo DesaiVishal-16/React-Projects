@@ -12,7 +12,7 @@ const AllContacts = ({
   index,
 }) => {
   const renderImage = () => {
-    if (contact.img && Object.keys(contact.img).length !== 0) {
+    if (contact.img) {
       return (
         <img src={URL.createObjectURL(contact.img)} alt="Profile Picture" />
       );
