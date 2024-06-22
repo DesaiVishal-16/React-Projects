@@ -1,6 +1,6 @@
 # Shopping Cart
 
-[Live Link](https://github.com/DesaiVishal-16/React-Projects/tree/main/Beginner/Shopping-Cart)
+[Live Link](https://shopping-cart-r16.netlify.app/)
 
 A simple and efficient address book application built with React and Vite.
 
@@ -22,7 +22,7 @@ A simple and efficient address book application built with React and Vite.
 
 ## Demo
 
-Check out the live demo of the Address Book [here](https://github.com/DesaiVishal-16/React-Projects/tree/main/Beginner/Shopping-Cart).
+Check out the live demo of the Address Book [here](https://shopping-cart-r16.netlify.app).
 
 ## Installation
 
