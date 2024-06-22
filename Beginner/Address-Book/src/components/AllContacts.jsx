@@ -14,10 +14,7 @@ const AllContacts = ({
   const renderImage = () => {
     if (contact.img && Object.keys(contact.img).length !== 0) {
       return (
-        <img
-          src={contact.img ? URL.createObjectURL(contact.img) : userImg}
-          alt="Profile Picture"
-        />
+        <img src={URL.createObjectURL(contact.img)} alt="Profile Picture" />
       );
     } else {
       return <img src={userImg} alt="Default Profile Picture" />;
