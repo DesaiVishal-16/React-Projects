@@ -11,7 +11,6 @@ A simple and efficient address book application built with React and Vite.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgements](#acknowledgements)
 
 ## Features
@@ -20,11 +19,10 @@ A simple and efficient address book application built with React and Vite.
 - Edit existing contacts.
 - Delete contacts.
 - Search and filter contacts.
-- Responsive design for mobile and desktop.
 
 ## Demo
 
-Check out the live demo of the Address Book [here](#).
+Check out the live demo of the Address Book [here](https://address-book-r16.netlify.app).
 
 ## Installation
 
