@@ -15,10 +15,9 @@ A simple and efficient address book application built with React and Vite.
 
 ## Features
 
-- Add new contacts with name, address, phone number, and email.
-- Edit existing contacts.
-- Delete contacts.
-- Search and filter contacts.
+- Inncrease & Decrease Quantity.
+- Aggreated Ammount of all items.
+- Delete Items.
 
 ## Demo
 
