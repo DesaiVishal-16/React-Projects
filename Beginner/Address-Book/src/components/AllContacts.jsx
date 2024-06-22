@@ -12,7 +12,7 @@ const AllContacts = ({
   index,
 }) => {
   const renderImage = () => {
-    if (contact.img) {
+    if (contact.img && Object.keys(contact.img).length !== 0) {
       const imgSrc =
         typeof contact.img === "string"
           ? contact.img
